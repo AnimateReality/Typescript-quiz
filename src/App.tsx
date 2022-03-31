@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import { fetchQuizQuestions } from "./API";
 import QuestionCard from "./components/QuestionCard";
 import { useState } from "react";
@@ -8,6 +9,7 @@ import { QuestionsState, Difficulty } from "./API";
 
 //styles
 import { GlobalStyle, Wrapper } from "./App.styles";
+
 
 export type AnswerObject = {
   question: string;
@@ -76,6 +78,10 @@ const App = () => {
     <GlobalStyle/>
     <Wrapper>
     <div className="App">
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Typescript Quiz</title>
+            </Helmet>
       <h1>React Quiz</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
         <button className="start" onClick={startTrivia}>
