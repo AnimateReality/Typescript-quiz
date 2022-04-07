@@ -44,7 +44,7 @@ export const Wrapper = styled.div`
 
   h1 {
     font-family: Fascinate Inline;
-    background-image: linear-gradient(170deg, #F4F9F9, #95D1CC);
+    background-image: linear-gradient(to bottom, #dcd0ff, #6FB2D2);
     font-weight: 400;
     background-size: 100%;
     background-clip: text;
@@ -52,7 +52,7 @@ export const Wrapper = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px #0085a3);
+    filter: drop-shadow(3px 3px #11468F);
     font-size: 70px;
     text-align: center;
     margin: 20px;

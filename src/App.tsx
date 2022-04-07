@@ -82,7 +82,7 @@ const App = () => {
                 <meta charSet="utf-8" />
                 <title>Typescript Quiz</title>
             </Helmet>
-      <h1>React Quiz</h1>
+      <h1>Ten Questions Quiz</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
         <button className="start" onClick={startTrivia}>
           Start
